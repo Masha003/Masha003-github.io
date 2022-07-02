@@ -1,0 +1,153 @@
+
+body {
+    background-color: #121417;
+    font-family: 'Overpass';
+    margin: auto;
+}
+
+.doc_content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 200px 0;
+}
+
+.rating_card, .finished_rating {
+  width: 340px;
+  background: linear-gradient(180deg, rgba(37,45,55,0.6) 40%, rgba(37,45,55,0.2) 100%);
+  border-radius: 30px;
+  padding: 35px;
+}
+
+.circle-el {
+  width: 50px;
+  height: 50px;
+  border-radius: 999999999px;
+  background-color: #252d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .star_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 999999999px;
+  background-color: #252d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.card-text div {
+  color: white;
+  font-size: 27px;
+  margin-top: 36px;
+  font-weight: 700;
+}
+
+.card-text p {
+  color: #959eac;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.rating-btns {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.input-btn {
+  cursor: pointer;
+  color: #959eac;
+  transition: color 0.25s ease-out;
+  transition: background-color 0.5s ease-out;
+  line-height: 0;
+}
+
+.input-btn.checked {
+  background-color: #959eac;
+  color: white;
+}
+
+.input-btn:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #fb7413;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Overpass';
+  border-radius: 30px;
+  padding: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+.finished_rating .content {
+  text-align: center;
+}
+
+.rating-status {
+  display: inline-block;
+  width: auto;
+  margin-top: 30px;
+  padding: 7px 20px 5px 20px;
+  background-color: #252d37;
+  color: #fb7413;
+  font-family: 'Overpass';
+  font-size: 15px;
+  border-radius: 9999999px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .rating_card, .finished_rating {
+    width: 265px;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+  .circle-el {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-text div {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .card-text p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .submit-btn {
+    font-size: 13px;
+  }
+}
